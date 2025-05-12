@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN "　"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <link href="./stylesheet.css" rel="stylesheet" type="text/css" />
+        <title>お客様情報登録</title>
+
+        <script src="./check.js"></script>
+
+    </head>
+
+    <body bgcolor="#FFFFE0">
+        <div>
+            <h1>お客様情報登録画面</h1>
+            <div>
+                <span>
+                    氏名（漢字）
+                </span>
+                <span>
+                    <input type="text" id="inputNameKanji" name="inputNameKanji" class="" />
+                </span>
+            </div>
+            <div>
+                <span>
+                    氏名（カナ）
+                </span>
+                <span>
+                    <input type="text" id="inputNameKana" name="inputNameKana" class="" />
+                </span>
+            </div>
+            <div>
+                <span>
+                    性別
+                </span>
+                <span>
+                    <input type="radio" id="inputGenderMale" name="inputGender" value="1">男性
+                    <input type="radio" id="inputGenderFemale" name="inputGender" value="2">女性
+                </span>
+            </div>
+            <div>
+                <span>
+                    生年月日
+                </span>
+                <span>
+                    <input type="text" id="inputbBirthdayYear" name="inputbBirthdayYear" class="" />年
+                </span>
+                <span>
+                    <input type="text" id="inputbBirthdayMonth" name="inputbBirthdayMonth" class="" />月
+                </span>
+                <span>
+                    <input type="text" id="inputbBirthdayDay" name="inputbBirthdayDay" class="" />日
+                </span>
+            </div>
+            <div>
+                <span>
+                    年齢
+                </span>
+                <span>
+                    <input type="text" id="inputAge" name="inputAge" class="" />歳
+                </span>
+            </div>
+            <div>
+                <span>
+                    都道府県
+                </span>
+                <span>
+                    <input type="text" id="inputPrefecture" name="inputPrefecture" value="" />
+                </span>
+            </div>
+            <div>
+                <span>
+                    住所
+                </span>
+                <span>
+                    <input type="text" id="inputAddress" name="inputAddress" value="" />
+                </span>
+            </div>
+            <div>
+                <span>
+                    建物名
+                </span>
+                <span>
+                    <input type="text" id="inputBuilding" name="inputBuilding" value="" />
+                </span>
+            </div>
+            <div>
+                <span>
+                    電話番号
+                </span>
+                <span>
+                    <input type="text" id="inputTEL1" name="inputTEL1" value="" />－
+                    <input type="text" id="inputTEL2" name="inputTEL2" value="" />－
+                    <input type="text" id="inputTEL3" name="inputTEL3" value="" />
+                </span>
+            </div>
+            <div>
+                <input type="button" id="buttonSubmit" name="" value="送信" onclick="checkInput()" />
+            </div>
+        </div>
+    </body>
+<html>

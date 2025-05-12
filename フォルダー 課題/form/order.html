@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN "　"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    
+    <h3>商品のご購入 shopping</h3>
+
+    <form action="order-cgi" method="post">
+
+    <p><b>お名前</b></p>
+        <input type="text" name="吉崎" size="45" maxlength="45">
+
+    <p><b>Eメール</b></p>
+        <input type="text" name="太雅" size="45" maxlength="45">
+
+    <p><b>郵便局</b></p>
+        <input type="text" name="ヨシザキ" size="15" maxlength="7">(ハイフンなし)
+
+    <p><b>ご住所</b></p>
+        <textarea name="addres" rows="5" cols="40"></textarea>
+
+    <p><b>注文商品</b></p>
+
+    <div>
+        <input type="checkbox" name="products" value="チーズスフレ">チーズスフレ
+
+    <select name="cheese_number">
+
+        <option value="1" selected="selected">1個</option>
+        <option value="2">2個</option>
+        <option value="3">3個</option>
+
+    </select>
+    
+    </div>
+    
+    <div>
+        <input type="checkbox" name="products" value="苺のバースデーケーキ">苺のバースデーケーキ
+
+    <select name="birthday_number">
+
+        <option value="1" selected="selected">1個</option>
+        <option value="2">2個</option>
+        <option value="3">3個</option>
+
+    </select>
+            
+    </div>
+
+    <div>
+        <input type="checkbox" name="products" value="洋菓子の詰め合わせ">洋菓子の詰め合わせ
+
+    <select name="sweets_number">
+
+        <option value="1"selected="selected">1個</option>
+        <option value="2">2個</option>
+        <option value="3">3個</option>
+    </select>
+
+    </div>
+
+    <p><b>当店をどこでお知りになりましたか？</b></p>
+
+        <input type="radio" name="selection" value="検索サイトから">検索サイトから
+        <input type="radio" name="selection" value="ご家族・ご友人から">ご家族・ご友人から
+        <input type="radio" name="selection" value="広告・チラシ等">広告・チラシ等
+        <input type="radio" name="selection" value="その他" checked="checked">その他
+
+    <div style="margin-top: 10px; padding-top: 10px; border-top: 1px #C0C0C0 dotted">
+        <input type="submit" value="送信する"/>
+        <input type="reset"  value="取り消し"/>
+    </div>
+
+</form>
+
+</body>
+
+</html>
