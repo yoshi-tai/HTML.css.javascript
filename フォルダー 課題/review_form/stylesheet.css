@@ -1,52 +1,41 @@
-input[type="submit"]{
-        width:200px;
-        height:50px;
-        }
+td.haruka{
+color:#ff0000;
 
-input.ono{
-		    margin-left: 50%;
-		    border-radius:5px;
-		    }
-		    
-		    td.haruka{
-		    color:#ff0000;
-		    
-		    }
-		    
-		    input.txt{
-		    margin: 10px 10px;
-		    border:solid;
-		    }
-		    
-		    input.add{
-		    border:solid;
-		    height:150px;
-		    }
-		    
-		    td.yohaku{
-		    padding: 20px;
-		    }
-		    
-		    input[type="submit"]{
-		    background-color:silver;
-		    border-radius;
-		    width:120px;
-		    height:30px;
-		    }
-		    
-		    
-		    
-		    td.del{
-		    border: none;
-		    }
-		    
-		    td.jen{
-		    text-align:left;
-		    }
-		    
-		    textarea.huto{
-		    width:300px;
-		    height:30px;
-		    border:2px solid #000000;
-		    resize:none;
-		    }
+}
+input.txt{
+margin: 10px 10px;
+border: solid;
+} 
+input.add{
+border:solid;
+height:50px;
+}
+
+input[type="submit"]{
+background-color:silver;
+border-radius:8px;
+margin:8px;
+padding:5px 50px;
+}
+
+td.del{
+border: none;
+}
+
+  td.jen{
+text-align:left;
+} 
+
+textarea.huto{
+width:300px;
+height:80px;
+border:2px solid #000000;
+resize:none;
+}
+
+.box{
+border: solid;
+height:40px;
+margin:10px 10px;
+} 
+

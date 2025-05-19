@@ -71,6 +71,7 @@ function checkInput(){
     let inputbValuesBirthdayYear = document.getElementById("inputbBirthdayYear").value;
         //4桁以内で入力
     const checkPattern4Digits = /^\d{4}$/;
+    	//半角数字であること
     const checkPatternHalfWidthNum = /^\d+$/;
     
     let BirthdayYear = checkPattern4Digits.test(inputbValuesBirthdayYear);
@@ -89,14 +90,14 @@ function checkInput(){
     //5問目(生年月日、年)
         //文字数が2桁以内であること(生年月日（月）は2桁以内で入力してください。)
     let inputbValuesBirthdayMonth = document.getElementById("inputbBirthdayMonth").value;
-        //2桁以内で入力
-    const checkPattern2Digits = /^\d{2}$/;
+        //1文字以上2桁以内で入力
+    const checkPattern2Digits = /^\d{1,2}$/;
     
     let BirthdayMonth = checkPattern2Digits.test(inputbValuesBirthdayMonth);
     let BirthdayMonth2 = checkPatternHalfWidthNum.test(inputbValuesBirthdayMonth);
     
     if(!BirthdayMonth){
-        alert('生年月日（月）は2桁以内で入力してください。'+inputbValuesBirthdayMonth);
+        alert('生年月日（月）は2桁で入力してください。'+inputbValuesBirthdayMonth);
     }
     if(!BirthdayMonth2){
         alert('生年月日（月）は半角数字を入力してください。'+inputbValuesBirthdayMonth);
@@ -121,17 +122,18 @@ function checkInput(){
     
     
 
-    //7問目
+    //7問目(checkPatternHalfWidthNum→半角数字)
     let age = document.getElementById("inputAge").value;
-    const checkPattern3Digits = /^\d{3}$/;
+    	//3桁以内であること
+    const checkPattern3Digits = /^\d{1,3}$/; 
     let yearsOld = checkPattern3Digits.test(age);
     
-    if(!yearsOld){
-        alert('年齢は3桁以内で入力してください。'+inputbValuesBirthdayDay);
+    if(!checkPattern3Digits.test(age)){
+        alert('年齢は3桁以内で入力してください。'+age);
     }
-    if(!yearsOld){
-        alert('年齢は半角数字で入力してください。'+inputbValuesBirthdayDay);
-    }
+    if(!checkPatternHalfWidthNum.test(age)){
+        alert('年齢は半角数字で入力してください。'+age);
+    }//.test(age)で半角数字で入力を指定している。
 
     //8問目
     //都道府県は4文字以内で入力してください。
@@ -145,13 +147,13 @@ function checkInput(){
     
 
     //9問目
-    let inputAddressAdd = document.getElementById("inputAddress").value;
-    const checkPatternMax120 = /^.{120}$/;  //120文字以内
-    let Add = checkPatternMax120.test(inputAddressAdd);
-    
-    if(!Add){
-        alert('住所は120文字以内で入力してください。'+inputAddressAdd);
-    }
+	    let inputAddressAdd = document.getElementById("inputAddress").value;
+	    const checkPatternMax120 = /^.{1,120}$/;  //120文字以内
+	    let Add = checkPatternMax120.test(inputAddressAdd);
+	    
+	    if(!Add){
+	        alert('住所は120文字以内で入力してください。'+inputAddressAdd);
+	    }
     
     //10問目
     let inputBuildingBuild = document.getElementById("inputBuilding").value;
